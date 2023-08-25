@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 15px;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 80%;
+  height: 70%;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;" class="header">
+  <h1><a href="./index.html">Mumbai Flood Warning System</a></h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="./tweet.html">Flood scenario</a>
+    <a href="./1hr.html">Rainfall in 1hr</a>
+    <a href="./3day.html">Rainfall in 3 days</a>
+    <a href="./extreme.html" style="background-color:MediumSeaGreen;">Extreme rain prediction</a>
+    <a href="./flood_map.html">Flood forecasting</a>
+  </div>
+
+  <div class="main" id="main">
+    <!-- <h2 style="text-align:center;">MAP</h2>-->
+    <object type="text/html" data="./maps/extreme_pred.html" width="100%" height="700" style="overflow:auto;border:5px ridge gray;">
+    </object>
+  </div>
+
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;color:black;">© copyright IIT Bombay</div>
+
+</body>
+</html>
+
